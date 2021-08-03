@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculato</title>
+    <link rel="stylesheet" href="./css/calculator.css">
+    <script type="text/javascript">
+    function myclick(a) {
+        cal.display.value+=a;
+    }
+    function op(){
+        cal.display.value=eval(cal.display.value)
+    }
+    function ac(){
+        cal.display.value=''
+    }
+    </script>
+</head>
+<body>
+    .head
+    <form action="cal" id="cal">
+        <input type="text"  id="input" name="display">
+        <div class="ds">created by james</div>
+        <div class="font">
+
+
+     <input type="button" id="b" value="7" onclick="myclick('7')"/>
+     <input type="button" id="b" value="8" onclick="      myclick('8')"/>
+     <input type="button" id="b" value="9" onclick="      myclick('9')"/>
+     <input type="button" id="b" value="AC" onclick="ac() "/> <br>
+     <input type="button" id="b" value="4" onclick="      myclick('4')"/>
+     <input type="button" id="b" value="5" onclick="      myclick('5')"/>
+     <input type="button" id="b" value="6" onclick="      myclick('6')"/>
+     <input type="button" id="b" value="/" onclick="      myclick('/')"/> <br>
+     <input type="button" id="b" value="1" onclick="      myclick('1')"/>
+     <input type="button" id="b" value="2" onclick="      myclick('2')"/>
+     <input type="button" id="b" value="3" onclick="      myclick('3')"/>
+     <input type="button" id="b" value="*" onclick="      myclick('*')"/> <br>
+
+     <input type="button" id="b" value="0" onclick="      myclick('0')"/>
+     <input type="button" id="b" value="+" onclick="      myclick('+')"/>
+     <input type="button" id="b" value="-" onclick="      myclick('-')"/>
+     <input type="button" id="equal" value="=" onclick="      op()"/>
+
+
+
+
+
+
+
+        </div>
+    </form>
+</body>
+</html>
